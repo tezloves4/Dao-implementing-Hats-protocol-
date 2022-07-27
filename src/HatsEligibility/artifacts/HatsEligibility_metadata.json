@@ -1,0 +1,176 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_hatId",
+						"type": "uint256"
+					}
+				],
+				"name": "checkEligibility",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "hats",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "penalize",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hatId",
+						"type": "uint256"
+					}
+				],
+				"name": "relinquishHat",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hatId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "submitOffer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "user",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "unlockEligibility",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/HatsEligibility/HatsEligibility.sol": "HatsEligibility"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/HatsEligibility/HatsEligibility.sol": {
+			"keccak256": "0x9c21d25fd904143ac8391cabdabb5d1d5889562b27f37878c5394f31670d67d4",
+			"license": "CC0",
+			"urls": [
+				"bzz-raw://95c1941a1e83fc12d575b2825a82ee90d65203f3ca7d8b58539a673d09632735",
+				"dweb:/ipfs/QmPEuFvg5HZPuNZVDgXSX2Pn4vp4ZvmLLqzXXaJbMr8KL8"
+			]
+		},
+		"src/IHats.sol": {
+			"keccak256": "0xfbb9a4059ef5f4e686bdd25905e083d4698973861a49020eea26deb86b62a700",
+			"license": "CC0",
+			"urls": [
+				"bzz-raw://98a7f16c75550a024be61353023c4faa8c11e75baa2541140e6aa92ea45a3e5b",
+				"dweb:/ipfs/QmNejh8bd94gAbgA4tHxBNgcKLJyK1iKcQVSmaXqrEkEPB"
+			]
+		}
+	},
+	"version": 1
+}

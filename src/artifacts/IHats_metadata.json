@@ -1,0 +1,248 @@
+{
+	"compiler": {
+		"version": "0.8.15+commit.e14f2714"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "offerId",
+						"type": "uint256"
+					}
+				],
+				"name": "acceptOffer",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hatId",
+						"type": "uint256"
+					}
+				],
+				"name": "checkHatConditions",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "details",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "eligibilityThreshold",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "oracle",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "conditions",
+						"type": "address"
+					}
+				],
+				"name": "createHat",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "hatId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hatId",
+						"type": "uint256"
+					}
+				],
+				"name": "deactivateHat",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hatId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "offeror",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "recordOffer",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "offerId",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hatId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "wearer",
+						"type": "address"
+					}
+				],
+				"name": "recordRelinquishment",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "success",
+						"type": "bool"
+					},
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hatId",
+						"type": "uint256"
+					}
+				],
+				"name": "requestOracleRuling",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "hatId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "bool",
+						"name": "ruling",
+						"type": "bool"
+					}
+				],
+				"name": "rule",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"src/IHats.sol": "IHats"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"src/IHats.sol": {
+			"keccak256": "0xfbb9a4059ef5f4e686bdd25905e083d4698973861a49020eea26deb86b62a700",
+			"license": "CC0",
+			"urls": [
+				"bzz-raw://98a7f16c75550a024be61353023c4faa8c11e75baa2541140e6aa92ea45a3e5b",
+				"dweb:/ipfs/QmNejh8bd94gAbgA4tHxBNgcKLJyK1iKcQVSmaXqrEkEPB"
+			]
+		}
+	},
+	"version": 1
+}
